@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# YOLO outputs
+runs/
+*.pt
+
+# Dataset (only keep data.yaml)
+data/Lettuce-ObjDet-x3-2/train/
+data/Lettuce-ObjDet-x3-2/valid/
+data/Lettuce-ObjDet-x3-2/test/
+data/
+
+# OS junk
+.DS_Store
+Thumbs.db

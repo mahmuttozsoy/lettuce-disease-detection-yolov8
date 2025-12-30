@@ -22,7 +22,7 @@ def main():
         save_txt=True,
         imgsz=640,
         device=0,
-        workers=0   # 🔑 Windows için kritik
+        workers=0   
     )
 
     print("✅ Tüm test dataseti inference tamamlandı")
@@ -34,7 +34,7 @@ def main():
         conf=0.25,
         iou=0.5,
         device=0,
-        workers=0   # 🔑 yine kritik
+        workers=0
     )
 
     print("📊 Test metrikleri:")
@@ -42,5 +42,5 @@ def main():
     print("✅ Test süreci tamamen tamamlandı")
 
 if __name__ == "__main__":
-    mp.freeze_support()   # 🔑 Windows spawn fix
+    mp.freeze_support()   
     main()
